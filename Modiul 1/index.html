@@ -6,22 +6,56 @@
     <title>Tour of DOM</title>
 
     <link rel="stylesheet" href="/style/style.css">
+    <style>
+        #fruites-titel{
+            color: rgb(248, 3, 3);
+        }
+        .imp-place{
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <h1>Welcome to my DOM</h1>
-        <ul>
-            <li>Kasem</li>
-            <li>Kiminal</li>
-            <li>Daimul</li>
-            <li>Bati</li>
-        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis vitae repudiandae odio assumenda laborum cupiditate ea vero.</p>
     </header>
 
+
     <main>
-        <h1>Lorem ipsum dolor sit amet Maharob.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi omnis vitae repudiandae odio assumenda laborum cupiditate ea vero.</p>
+        <section>
+            <h1>Lorem ipsum dolor sit amet Maharob.</h1>
+            <ul>
+                <li>Kasem</li>
+                <li>Kiminal</li>
+                <li>Daimul</li>
+                <li>Bati</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="fruites-titel">I love this fruites</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Ball</li>
+                <li>Bannana</li>
+                <li>Painapple</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="place-titel">I love to travell to this place</h1>
+            <ul>
+                <li class="imp-place">Sundarban</li>
+                <li class="imp-place">Rangamati</li>
+                <li class="imp-place">Sylet</li>
+                <li class="imp-place">Cox's Bazar</li>
+                <li>Senmartin</li>
+            </ul>
+        </section>
+
     </main>
     
     <script src="js/dom.js"></script>
@@ -29,13 +63,19 @@
         const liCollection = document.getElementsByTagName('li');
         //  console.log(liCollection);
         for(const li of liCollection){
-            console.log(li.innerText);
+         //   console.log(li.innerText);
         }
 
         const allHeading = document.getElementsByTagName('h1');
         for( const h1 of allHeading){
-            console.log(h1.innerText);
+         //   console.log(h1.innerText);
         }
+
+        const places = document.getElementsByClassName('imp-place');
+         //   console.log(places);
+         for( const place of places){
+            console.log(place.innerText);
+         }
     </script>
 </body>
 </html>
