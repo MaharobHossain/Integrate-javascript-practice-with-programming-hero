@@ -34,7 +34,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="fruits-container">
             <h1 id="fruites-titel">I love this fruites</h1>
             <ul>
                 <li>Apple</li>
@@ -45,7 +45,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="place-container">
             <h1 id="place-titel">I love to travell to this place</h1>
             <ul>
                 <li class="imp-place">Sundarban</li>
@@ -60,6 +60,8 @@
     
     <script src="js/dom.js"></script>
     <script>
+
+        //option - 1:getElementsByTagName
         const liCollection = document.getElementsByTagName('li');
         //  console.log(liCollection);
         for(const li of liCollection){
@@ -71,11 +73,29 @@
          //   console.log(h1.innerText);
         }
 
+                //option - 2:getElementsByClassName
         const places = document.getElementsByClassName('imp-place');
          //   console.log(places);
          for( const place of places){
             console.log(place.innerText);
          }
+
+                 //option - 3:getElementsById
+                 //aita kora hoi ni, just name diaa kora jai.
+
+
+         //option - 4:querySelectorAll               
+         const someLi = document.querySelectorAll('.fruits-container li');
+         //  console.log(someLi);
+         for( const li of someLi){
+            console.log(li.innerText);
+         }
+
+
+          //option - 5:querySelector        
+         const placeLi = document.querySelector('.place-container li');
+           console.log(placeLi);
+         
     </script>
 </body>
 </html>
