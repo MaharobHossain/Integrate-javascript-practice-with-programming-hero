@@ -37,5 +37,22 @@ ul.appendChild(li4);
 
 
 section.appendChild(ul);
-
 mainContent.appendChild(section);
+
+
+
+
+//     set innerHtml directtlly---->
+const sectionDress = document.createElement("section");
+ sectionDress.innerHTML = `
+    <h1>Favourate dress of Maharob.</h1>
+            <ul>
+                <li>Lungi</li>
+                <li>Jins pant</li>
+                <li>Shirt</li>
+                <li>T-Shirt</li>
+                <li>Sendo Genzi</li>
+                <li>Under Ware</li>
+            </ul>
+ `
+   mainContent.appendChild(sectionDress);
