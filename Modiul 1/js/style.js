@@ -8,3 +8,10 @@ for( const section of sections){
     section.style.paddingLeft = '15px';
     section.style.backgroundColor ="lightgray";
 }
+
+// const placesContainer = document.getElementById('places-container');
+//     placesContainer.style.backgroundColor ='tomato';
+
+const placesContainer = document.getElementById('places-container');
+      placesContainer.classList.add('text-center');  //add korar jonno
+      placesContainer.classList.remove('large-text'); //remove korar jonno

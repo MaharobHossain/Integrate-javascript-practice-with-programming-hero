@@ -3,3 +3,12 @@
 h1{
     background-color: aqua;
 }
+
+.large-text{
+    font-size: 2em;
+}
+
+.text-center{
+    text-align: center;
+    /* background-color: rgb(221, 102, 205) !important; */
+}
