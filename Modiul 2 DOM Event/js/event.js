@@ -2,6 +2,8 @@
 // <button onclick="document.body.style.backgroundColor = 'tomato' ">Make Tomato Background</button>
 
 
+
+//   Important: we will use this normally
 // Option 2: on click function()
 function makeBlue(){
     document.body.style.backgroundColor = 'blue';
@@ -25,8 +27,9 @@ function makeAqua(){
             document.body.style.backgroundColor ='purple';
         }
 
-            // this  up and down is final and we are regularlly use it
-            
+
+
+
         //   Option 4 another: on click function() 
         const makePinkButton = document.getElementById('make-pink');
         makePinkButton.onclick = function makePink(){
@@ -50,4 +53,12 @@ function makeAqua(){
         chocolateButton.addEventListener('click', function makeChocolate(){
             document.body.style.backgroundColor ='chocolate';
         });
+
+
+
+        //   Final option: Important: we will use this normally
+              //   document.getElementById('make-green').addEventListener('click', function(){})
+              document.getElementById('make-green').addEventListener('click', function(){
+                document.body.style.backgroundColor = 'green';
+            })
 
