@@ -7,7 +7,7 @@
 
     <style>
         /* h1{
-            background-color: aqua;
+            background-color: chartreuse;
         } */
     </style>
 </head>
@@ -32,6 +32,9 @@
     <br><br>
             <!-- option 4 another -->
     <button id="make-pink">Make Pink Background</button>
+    <br><br>
+            <!-- option 5  -->
+    <button id="make-chartreuse">Make Chartreuse Background</button>
 
     <script src="js/event.js"></script>
     <script>
@@ -55,6 +58,15 @@
         const makePurpleButton = document.getElementById('make-purple');
         makePurpleButton.onclick = function makePurple(){
             document.body.style.backgroundColor ='purple';
+        }
+
+
+                //   Option 5: on click function() 
+        const chartreuseButton = document.getElementById('make-chartreuse');
+        chartreuseButton.addEventListener('click', makeChartreuse)
+
+        function makeChartreuse(){
+            document.body.style.backgroundColor ='chartreuse';
         }
 
 

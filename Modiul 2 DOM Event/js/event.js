@@ -21,3 +21,13 @@ function makeAqua(){
         makePinkButton.onclick = function makePink(){
             document.body.style.backgroundColor ='pink';
         }
+
+
+
+        //   Option 5: on click function() 
+        const chartreuseButton = document.getElementById('make-chartreuse');
+        chartreuseButton.addEventListener('click', makeChartreuse)
+
+        function makeChartreuse(){
+            document.body.style.backgroundColor ='chartreuse';
+        }
