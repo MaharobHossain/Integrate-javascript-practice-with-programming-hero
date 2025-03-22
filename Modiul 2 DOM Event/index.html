@@ -18,25 +18,43 @@
     <br> <br>
     <button onclick="console.log(45)">Submit</button>
     <br> <br>
+        <!-- option 1 -->
     <button onclick="document.body.style.backgroundColor = 'tomato' ">Make Tomato Background</button>
     <br><br>
-    <button onclick="makeBlue()">Make Blue</button>
+            <!-- option 2 -->
+    <button onclick="makeBlue()">Make Blue Background</button>
     <br> <br>
-    <button id="make-aqua">Make Aqua</button>
+            <!-- option 3 -->
+    <button id="make-aqua">Make Aqua Background</button>
+    <br><br>
+            <!-- option 4 -->
+    <button id="make-purple">Make Purple Background</button>
+    <br><br>
+            <!-- option 4 another -->
+    <button id="make-pink">Make Pink Background</button>
 
     <script src="js/event.js"></script>
     <script>
-        // // Option 1: On click function()
+        // // Option 2: On click function()
         // function makeBlue(){
         //      document.body.style.backgroundColor ='blue';
         //     //  document.body.style.backgroundColor ='gray';
         // }
 
-        const makeAquaButton = document.getElementById('make-aqua');
-        makeAquaButton.onclick = makeAqua;
 
-        function makeAqua(){
-            document.body.style.backgroundColor = 'aqua';
+        //  // Option 3: on click function() 
+        // const makeAquaButton = document.getElementById('make-aqua');
+        // makeAquaButton.onclick = makeAqua;
+
+        // function makeAqua(){
+        //     document.body.style.backgroundColor = 'aqua';
+        // }
+
+
+        //   Option 4: on click function() 
+        const makePurpleButton = document.getElementById('make-purple');
+        makePurpleButton.onclick = function makePurple(){
+            document.body.style.backgroundColor ='purple';
         }
 
 
