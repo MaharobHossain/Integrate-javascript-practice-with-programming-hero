@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript DOM Event</title>
+
+    <style>
+        /* h1{
+            background-color: aqua;
+        } */
+    </style>
 </head>
 <body>
 
@@ -15,14 +21,25 @@
     <button onclick="document.body.style.backgroundColor = 'tomato' ">Make Tomato Background</button>
     <br><br>
     <button onclick="makeBlue()">Make Blue</button>
+    <br> <br>
+    <button id="make-aqua">Make Aqua</button>
 
     <script src="js/event.js"></script>
     <script>
-        function makeBlue(){
-             document.body.style.backgroundColor ='blue';
-            //  document.body.style.backgroundColor ='gray';
+        // // Option 1: On click function()
+        // function makeBlue(){
+        //      document.body.style.backgroundColor ='blue';
+        //     //  document.body.style.backgroundColor ='gray';
+        // }
 
+        const makeAquaButton = document.getElementById('make-aqua');
+        makeAquaButton.onclick = makeAqua;
+
+        function makeAqua(){
+            document.body.style.backgroundColor = 'aqua';
         }
+
+
 
     </script>
     
