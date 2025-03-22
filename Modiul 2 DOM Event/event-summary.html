@@ -9,10 +9,16 @@
 
     <h1>Final DOM Event Handlers</h1>
 
+
     <h3 id="from-text">Fill up the from</h3>
     <button onclick="handOnClick()">Handel Event by add onclick Function</button>
     <button id="event-listener">Handel Event by addEventListener</button>
+    <br>
 
+    <h2 id="update-text">Enter your Name</h2>
+    <input type="text" name="" placeholder="Your Name" id="input-text">
+    <button id="btn-update">Update</button>
+    <br><br>
 
 
     <script>
@@ -27,6 +33,16 @@
         document.getElementById('event-listener').addEventListener('click', function(){
             const handleText = document.getElementById('from-text');
             handleText.innerText ='Please, provied your Mobile Number of verification perpus';
+        })
+
+        // Option 2 recap
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const inputfield = document.getElementById('input-text');
+            const inputText = inputfield.value;
+
+            const inputTextUpdate = document.getElementById('update-text');
+            inputTextUpdate.innerText = inputText; 
+            inputfield.value = "";
         })
 
     </script>
