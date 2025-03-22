@@ -9,8 +9,9 @@
 
     <h1>Final DOM Event Handlers</h1>
 
-    <h3 id="text">Fill up the from</h3>
+    <h3 id="from-text">Fill up the from</h3>
     <button onclick="handOnClick()">Handel Event by add onclick Function</button>
+    <button id="event-listener">Handel Event by addEventListener</button>
 
 
 
@@ -18,9 +19,16 @@
 
         // Option 1
         function handOnClick(){
-            const handleText = document.getElementById('text');
+            const handleText = document.getElementById('from-text');
             handleText.innerText ='Please, give the currect info & fill up the from'; 
         }
+
+        // Option 2
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const handleText = document.getElementById('from-text');
+            handleText.innerText ='Please, provied your Mobile Number of verification perpus';
+        })
+
     </script>
     
 </body>
