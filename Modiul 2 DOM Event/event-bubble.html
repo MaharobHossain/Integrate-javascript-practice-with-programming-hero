@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(semi-advanced) Event bubble and Stop propagating</title>
+</head>
+<body>
+
+    <h1>Explore event bubble</h1>
+
+    <ul>
+        <li id="item-1">Lorem, ipsum dolor.</li>
+        <li id="item-2">Porro, illo odit.</li>
+        <li id="item-3">Magni, quam pariatur.</li>
+        <li id="item-4">Maiores, distinctio inventore.</li>
+        <li id="item-5">Deserunt, ipsum reiciendis.</li>
+        <li id="item-6">Quis, eligendi! Voluptates.</li>
+    </ul>
+    
+    <script>
+        document.getElementById('item-2').addEventListener('click', function(){
+            console.log('item 2 clicked');
+        })
+    </script>
+</body>
+</html>
