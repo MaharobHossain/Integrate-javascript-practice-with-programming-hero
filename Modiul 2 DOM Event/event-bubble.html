@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>(semi-advanced) Event bubble and Stop propagating</title>
 </head>
-<body>
+<body class="body">
 
+    <section id="list-section">
     <h1>Explore event bubble</h1>
 
-    <ul>
+    <ul id="list-ul">
         <li id="item-1">Lorem, ipsum dolor.</li>
         <li id="item-2">Porro, illo odit.</li>
         <li id="item-3">Magni, quam pariatur.</li>
@@ -17,11 +18,31 @@
         <li id="item-5">Deserunt, ipsum reiciendis.</li>
         <li id="item-6">Quis, eligendi! Voluptates.</li>
     </ul>
+    </section>
     
     <script>
-        document.getElementById('item-2').addEventListener('click', function(){
+        document.getElementById('item-2').addEventListener('click', function(event){
             console.log('item 2 clicked');
+           //  event.stopPropagation();        //  stopPropagation() use kora mane sob gulo same event pawa
+           event.stopImmediatePropagation();   //  stopImmediatePropagation() use kora mane aktai pabe(1st ar ta)
         })
+        document.getElementById('item-2').addEventListener('click', function(event){
+            console.log('item 2 2nd clicked');
+        })
+        document.getElementById('item-2').addEventListener('click', function(event){
+            console.log('item 2 3rd clicked');
+        })
+        document.getElementById('list-ul').addEventListener('click', function(){
+            console.log('ul clicked');
+        })
+        document.getElementById('list-section').addEventListener('click', function(){
+            console.log('section clicked');
+        })
+        document.getElementById('body').addEventListener('click', function(){
+            console.log('all body clicked');
+        })
+
     </script>
+
 </body>
 </html>
