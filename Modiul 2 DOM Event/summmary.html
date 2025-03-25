@@ -9,13 +9,19 @@
     <h1>Explore DOM Event</h1>
 
     <button onclick="makePink()">Make Pink</button>
-    <button>Make Green</button>
+    <button id="make-green">Make Green</button>
     
 
     <script>
+        // option 1
         function makePink(){
             document.body.style.backgroundColor ='pink'
         }
+        // option 2
+        document.getElementById('make-green').addEventListener('click', function(){
+            document.body.style.backgroundColor ='green'
+        })
+
     </script>
 </body>
 </html>
